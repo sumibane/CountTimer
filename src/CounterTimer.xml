@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget
+    id="nagarro.countertimer.CounterTimer"
+    pluginWidget="true"
+    needsEntityContext="true"
+    offlineCapable="true"
+    supportedPlatform="Web"
+    xmlns="http://www.mendix.com/widget/1.0/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd"
+>
+    <name>Counter Timer</name>
+    <description>Counting Down Timer including negative timing</description>
+    <icon />
+    <properties>
+        <propertyGroup caption="General">
+            <property key="endDate" type="attribute">
+                <caption>Date Time</caption>
+                <description>Enter the date time till the countdown</description>
+                <attributeTypes>
+                    <attributeType name="DateTime" />
+                </attributeTypes>
+            </property>
+            <property key="isHour" type="boolean" defaultValue="false">
+                <caption>Show Hour</caption>
+                <description>Select if you want to show the hour details</description>
+            </property>
+            <property key="isMinute" type="boolean" defaultValue="true">
+                <caption>Show Minute</caption>
+                <description>Select if you want to show the minute details</description>
+            </property>
+            <property key="isSecond" type="boolean" defaultValue="true">
+                <caption>Show Second</caption>
+                <description>Select if you want to show the hour details</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
